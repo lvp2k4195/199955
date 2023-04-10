@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- thanhmenu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/png;base64,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"
+          alt="Bootstrap" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="web2.html">Ho Tro</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CHÚNG TÔI LÀ AI
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">CHÚNG TÔI LÀ AI</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LÀM VIỆC CÙNG CHÚNG TÔI
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">LÀM VIỆC CÙNG CHÚNG TÔI</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tin Tức </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-danger"><a class="dropdown-item" href="webdn.html">Login</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- anhdong -->
+
+  <!-- ? -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://www.riotgames.com/darkroom/1440/4d54f9d2c0df5275758d74680ab0e5a4:d075bc9649849206d4acdd2af59175b2/riotpr-mar2023-social-twitch-1920x1080-03-17-2023.png"
+          class="d-block w-60 h-20" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.riotgames.com/darkroom/1440/4d54f9d2c0df5275758d74680ab0e5a4:d075bc9649849206d4acdd2af59175b2/riotpr-mar2023-social-twitch-1920x1080-03-17-2023.png"
+          class="d-block w-60 h-20" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://www.riotgames.com/darkroom/1440/4d54f9d2c0df5275758d74680ab0e5a4:d075bc9649849206d4acdd2af59175b2/riotpr-mar2023-social-twitch-1920x1080-03-17-2023.png"
+          class="d-block w-60 h-20" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="row" style="padding: 2%;">
+    <div class="col-sm-10">
+      <h2>Chuyện gì đang xảy ra vậy?</h2>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-dark">Dark</button>
+
+    </div>
+  </div>
+
+  <!--Main layout-->
+<div class="container">
+  <!--Section: News of the day-->
+  <section class="border-bottom pb-4 mb-5">
+    <div class="row gx-5">
+      <div class="col-md-6 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+          <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3cb707ebde19590b/64015c1ee35cc90ebcbd2a37/00MilioHeader.jpg" class="img-fluid" />
+          <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+        <h4><strong>NHẬT KÝ PHÁT TRIỂN: MILIO</strong></h4>
+        <p style="text-decoration: none;"  class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+          eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+          sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+        </p>
+        <button type="button" class="btn btn-primary">Read more</button>
+      </div>
+    </div>
+  </section>
+  <!--Section: News of the day-->
+
+  <!--Section: Content-->
+  <section>
+    <div class="row gx-lg-5">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <!-- News block -->
+        <div>
+          <!-- Featured image -->
+          <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4"
+            data-mdb-ripple-color="light">
+            <img src="https://www.riotgames.com/darkroom/960/231feb0372550ecf40a01173020aaa1c:02a5adc3f7468917f07c7724e48f0e2b/bhm-key-art.png" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+
+          <!-- Article data -->
+          <div class="row mb-3">
+            <div class="col-6">
+              <a href="" class="text-info">
+                <i class="fas fa-plane"></i>
+                Travels
+              </a>
+            </div>
+
+            <div class="col-6 text-end">
+              <u> 15.07.2020</u>
+            </div>
+          </div>
+
+          <!-- Article title and description -->
+          <a style="text-decoration: none;" href="" class="text-dark">
+            <h5>Cùng Vinh Danh Tháng Lịch Sử Người Da Màu</h5>
+
+            <p >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+              adipisci iusto nam temporibus modi animi laboriosam?
+            </p>
+          </a>
+
+          <hr />
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Hollywood Sign on The Hill" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+        </div>
+        <!-- News block -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!-- News block -->
+        <div>
+          <!-- Featured image -->
+          <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+            data-mdb-ripple-color="light">
+            <img src="https://www.riotgames.com/darkroom/1000/34053b0c1be5e22b9a5671ff90bb8bdb:2ad3aae08d570948ee004d0e954ea694/celebrating-lny-2023.png" class="img-fluid"
+              alt="Brooklyn Bridge" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+
+          <!-- Article data -->
+          <div class="row mb-3">
+            <div class="col-6">
+              <a href="" class="text-danger">
+                <i class="fas fa-chart-pie"></i>
+                Business
+              </a>
+            </div>
+
+            <div class="col-6 text-end">
+              <u> 15.07.2020</u>
+            </div>
+          </div>
+
+          <!-- Article title and description -->
+          <a style="text-decoration: none;"  href="" class="text-dark">
+            <h5>Mừng Tết Nguyên Đán Cả Trong Và Ngoài Trò Chơi</h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+              adipisci iusto nam temporibus modi animi laboriosam?
+            </p>
+          </a>
+
+          <hr />
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/031.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Five Lands National Park" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/032.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Paris - Eiffel Tower" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/033.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Louvre" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/034.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Times Square" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+        </div>
+        <!-- News block -->
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!-- News block -->
+        <div>
+          <!-- Featured image -->
+          <div class="bg-image hover-overlay shadow-1-strong rounded-5 ripple mb-4"
+            data-mdb-ripple-color="light">
+            <img src="https://www.riotgames.com/darkroom/960/d1eeab9c53f342509c0fb13a983b7079:a367736274ebfab06a6e8ac2fcbb3001/2023-whm-maye-macswiney-16x9.png" class="img-fluid"
+              alt="Golden Gate National Recreation Area" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+
+          <!-- Article data -->
+          <div class="row mb-3">
+            <div class="col-6">
+              <a href="" class="text-warning">
+                <i class="fas fa-code"></i>
+                Technology
+              </a>
+            </div>
+
+            <div class="col-6 text-end">
+              <u> 15.07.2020</u>
+            </div>
+          </div>
+
+          <!-- Article title and description -->
+          <a style="text-decoration: none;"  href="" class="text-dark">
+            <h5>Từ Duck Hunt cho tới Riot Games, Hành Trình Sự Nghiệp Của Maye Mac-Swiney - Không Chỉ Đơn Thuần Là Thương Hiệu</h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste aliquid. Sed
+              id nihil magni, sint vero provident esse numquam perferendis ducimus dicta
+              adipisci iusto nam temporibus modi animi laboriosam?
+            </p>
+          </a>
+
+          <hr />
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/011.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Brooklyn Bridge" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/012.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Hamilton Park" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/013.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden Kuala Lumpur" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+
+          <!-- News -->
+          <!-- <a href="" class="text-dark">
+            <div class="row mb-4 border-bottom pb-2">
+              <div class="col-3">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/014.webp"
+                  class="img-fluid shadow-1-strong rounded" alt="Perdana Botanical Garden" />
+              </div>
+
+              <div class="col-9">
+                <p class="mb-2"><strong>Lorem ipsum dolor sit amet</strong></p>
+                <p>
+                  <u> 15.07.2020</u>
+                </p>
+              </div>
+            </div>
+          </a> -->
+        </div>
+        <!-- News block -->
+      </div>
+    </div>
+  </section>
+  <!--Section: Content-->
+
+  <!-- Pagination -->
+  <!-- <nav class="my-4" aria-label="...">
+    <ul class="pagination pagination-circle justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav> -->
+</div>
+<!--Main layout-->
+
+
+  <nav style="padding: 5%;">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab" aria-controls="nav-home" aria-selected="true">Game Free</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+        role="tab" aria-controls="nav-profile" aria-selected="false">Thể thao điện tử và giải trí</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+        role="tab" aria-controls="nav-contact" aria-selected="false">Game Đa nền tảng</button>
+      <!-- <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button"
+        role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button> -->
+    </div>
+  </nav>
+  <!-- cacthe -->
+  <div class="tab-content" id="nav-tabContent">
+    <!-- tap1 -->
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="row"style="padding: 2%;" >
+        <div class="col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LIÊN MINH HUYỀN THOẠI </h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game</li>
+              <li class="list-group-item">Khuyen Mai:-99$</li>
+              <li class="list-group-item">$Free</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/bc82065fa73646b5fd26f2670cfaa9c4:045745fc403b0071802a3577237b2c68/val-6-2.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ĐẤU TRƯỜNG CHÂN LÝ</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game</li>
+              <li class="list-group-item">Khuyen Mai:-99$</li>
+              <li class="list-group-item">$Free</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/b6264e7b4f57e417c67d9b6b3ccadebf:3f2c7cbb5ef7760a6f7558734a3c433e/tft-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HUYỀN THOẠI RUNETERRA </h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game</li>
+              <li class="list-group-item">Khuyen Mai:-99$</li>
+              <li class="list-group-item">$Free</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/bdc9d7a312cc33ad8e590136688b6ffb:d9e0299676fa6e6231f0d1a7ad385b7c/wrka-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">VALORANT</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game</li>
+              <li class="list-group-item">Khuyen Mai:-99$</li>
+              <li class="list-group-item">$Free</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- tap2 -->
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="row" style="padding: 2%;">
+        <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/08b848016e83b6da600cb96fcc660a6c:9f3cd92e2dfe18714f6742202e6c4869/lol-esports-card.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seagame 2022</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Esports</li>
+              <li class="list-group-item">5/5/2022</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Xem</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/a6f62a96a3d1f5f0b0e18a9c9870fa04:17c27cccff9f5eac4bfc63f3af7d5ac7/val-esports-card.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Seagame 2023</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Esports</li>
+              <li class="list-group-item">5/5/2023</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">xem</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ARCANE</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Videos</li>
+              <li class="list-group-item">118 Phut</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Xem</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">RIOT GAMES MUSIC</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">MUSIC</li>
+              <li class="list-group-item">3,25Phut</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Xem</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- tap3 -->
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+      <div class="row" style="padding: 2%;">
+        <div class=" col-sm-6 col-lg-3">
+
+          <div class="card" style="width: 18rem;"style="padding: 1%;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/b4972eae8755f7aa42b02045fbd92334:fd0f85dd0cb0d7022087cdedcb129b3e/mageseeker-card.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">THE MAGESEEKER</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game Đa Thiết Bị</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class=" col-sm-6 col-lg-3" style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/1131e3bf9509d7ffb5d869e3aaf41fb5:7eb0b12d6ac787d19dfc1a99af7d24a3/ruined-king-productimage.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">RUINED KING</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game Đa Thiết Bị</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class=" col-sm-6 col-lg-3" style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/af936b9432ba7aedc91e01cdb384ece5:fdd782c0d3649be60bb4708a2ebc1ece/hextetch-mayhem-card-bg-1800.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HEXTEXCH</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game Đa Thiết Bị</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class=" col-sm-6 col-lg-3" style="padding: 1%;">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/900/5da6384cfe9e607b3c589ffab2eb9f53:02f5f472e47354cbf103e66b02f975f4/convrgence-productimage.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CONV/RGENCE</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Game Đa Thiết Bị</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- tap4 -->
+    <!-- <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+      <div class="row" style="padding: 2%;">
+        <div class="col-sm-3">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">may tuong thich</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-sm-3">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">may tuong thich</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-sm-3">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">may tuong thich</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-sm-3">
+
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://www.riotgames.com/darkroom/855/4930733403fae24cf79e5e27be520202:1ead09c2fa8c3429874bc05e5358ccca/lolkv-2023.png"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">may tuong thich</li>
+              <li class="list-group-item">khuyen mai</li>
+              <li class="list-group-item">$</li>
+            </ul>
+            <div class="card-body">
+              <button type="button" class="btn btn-dark">Mua</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #45526e"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Ctrl+C Hân Hạnh Tài Trợ Chương Trình Này
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a style="text-decoration: none;" class="text-white">BÁO CHÍ</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">BẢO MẬT</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">PHÁP LÝ</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">ĐIỀU KHOẢN SỬ DỤNG</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a style="text-decoration: none;"  class="text-white">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/"
+                 >Ps35039</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook"></i></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+  <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

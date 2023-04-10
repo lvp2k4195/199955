@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="stylesheet" href="MDB5-STANDARD-UI-KIT-Free-6.2.0/">
+</head>
+<body >
+   <!-- Pills navs -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="data:image/png;base64,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"
+          alt="Bootstrap" width="30" height="24">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CHÚNG TÔI LÀ AI
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">CHÚNG TÔI LÀ AI</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LÀM VIỆC CÙNG CHÚNG TÔI
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">LÀM VIỆC CÙNG CHÚNG TÔI</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tin Tức </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button type="button" class="btn btn-danger">Dang Nhap</button>
+      </div>
+    </div>
+  </nav>
+
+
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist" style="margin-top: 5%;">
+  <li class="nav-item" role="presentation" >
+    <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+      aria-controls="pills-login" aria-selected="true"style="width: 25%; margin-left:50%">Login</a>
+  </li>
+  <li class="nav-item" role="presentation" >
+    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+      aria-controls="pills-register" aria-selected="false"style="width: 25%;">Register</a>
+  </li>
+</ul>
+<!-- Pills navs -->
+
+<!-- Pills content -->
+<div class="tab-content"style="position: absolute;
+left: 25%;
+width: 50%;
+margin-top: 1%;">
+  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <form>
+      <div class="text-center mb-3">
+        <p>Sign in with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+
+      <p class="text-center">or:</p>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="loginName" class="form-control" />
+        <label class="form-label" for="loginName">Email or username</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="loginPassword" class="form-control" />
+        <label class="form-label" for="loginPassword">Password</label>
+      </div>
+
+      <!-- 2 column grid layout -->
+      <div class="row mb-4">
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Checkbox -->
+          <div class="form-check mb-3 mb-md-0">
+            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+            <label class="form-check-label" for="loginCheck"> Remember me </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-center">
+          <!-- Simple link -->
+          <a href="#!">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>Not a member? <a href="#!">Register</a></p>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+    <form>
+      <div class="text-center mb-3">
+        <p>Sign up with:</p>
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+
+        <button type="button" class="btn btn-link btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+
+      <p class="text-center">or:</p>
+
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="registerName" class="form-control" />
+        <label class="form-label" for="registerName">Name</label>
+      </div>
+
+      <!-- Username input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="registerUsername" class="form-control" />
+        <label class="form-label" for="registerUsername">Username</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="registerEmail" class="form-control" />
+        <label class="form-label" for="registerEmail">Email</label>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="registerPassword" class="form-control" />
+        <label class="form-label" for="registerPassword">Password</label>
+      </div>
+
+      <!-- Repeat Password input -->
+      <div class="form-outline mb-4">
+        <input type="password" id="registerRepeatPassword" class="form-control" />
+        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-center mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+          aria-describedby="registerCheckHelpText" />
+        <label class="form-check-label" for="registerCheck">
+          I have read and agree to the terms
+        </label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+    </form>
+  </div>
+</div>
+<!-- Pills content -->
+
+
+<script src="MDB5-STANDARD-UI-KIT-Free-6.2.0/js/mdb.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

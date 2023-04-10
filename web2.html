@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+
+ 
+
+<body>
+  <style>
+    /* Change the background color of the navbar to a darker shade of black */
+    .navbar {
+        background-color: #020000;
+    }
+    /* Change the login button color to a lighter shade of gray and the text color to black */
+    .btn-outline-primary {
+        color: #000;
+        border-color: #bfbfbf;
+        background-color: #bfbfbf;
+    }
+    /* Change the login button hover color to a darker shade of gray and the text color to white */
+    .btn-outline-primary:hover {
+        color: #fff;
+        border-color: #808080;
+        background-color: #808080;
+    }
+   
+</style>
+
+<!-- Create a navbar with a brand name, a search form and a login button -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="data:image/png;base64,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" alt="Bootstrap" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">
+            <h4>Home</h4>
+          </a>
+        </li>
+        <li class="nav-item"  style="padding-top: 2%;">
+          <a class="navbar-brand" href="#"  >SUPPORT</a>
+        </li>
+        <li class="nav-item"  style="padding-top: 2.5%;">
+          <a class="item ms-3" href="#">SUBMIT A TICKET</a>
+        </li>
+        <li class="nav-item"  style="padding-top: 2.5%;">
+          <a class="item ms-3" href="#" >SERVICE STATUS</a>
+        </li>
+      </ul>
+      <form class="d-flex ms-auto">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+      <button class="btn btn-outline-primary ms-2" type="button">  <a class="dropdown-item" href="webdn.html">Login</a></button>
+    </div>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-sm-10"></div>
+  <div class="col-sm-2"><div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+     Ngôn Ngữ 
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">VN</a></li>
+      <li><a class="dropdown-item" href="#">THÁI</a></li>
+      <li><a class="dropdown-item" href="#">Cambuchia</a></li>
+    </ul>
+  </div></div>
+
+</div>
+
+
+
+<h1 style="padding: 3%;">WELCOME TO RIOT SUPPORT. <br>
+  HOW CAN WE HELP?</h1>
+
+  <div class="row"style=" text-align:-webkit-center;">
+    <div class=" col-sm-6 col-lg-3">
+      <div class="card" style="width: 18rem;">
+        <div class="bg-image hover-zoom">
+          <a class="dropdown-item" href="web3.html"> <img src="https://theme.zdassets.com/theme_assets/43400/26a3897674e1320879640f22d4758c133f0c62f1.jpg" class="card-img-top w-100" alt="..."></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text">LIÊN MINH HUYỀN THOẠI </p>
+        </div>
+      </div>
+    </div>
+   
+    <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+      <div class="card" style="width: 18rem;">
+        <img src="	https://theme.zdassets.com/theme_assets/43400/e73f0983fe6d5d1964cbe5c6b417339184de4822.jpg
+        " class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">ĐẤU TRƯỜNG CHÂN LÝ</p>
+        </div>
+      </div>
+    </div>
+    <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+      <div class="card" style="width: 18rem;">
+        <img src="https://theme.zdassets.com/theme_assets/43400/b8c6076b0803ec630a1356f9ad0b69d6f910ddc5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">VALORANT </p>
+        </div>
+      </div>
+    </div>
+    <div class=" col-sm-6 col-lg-3"style="padding: 1%;">
+      <div class="card" style="width: 18rem;">
+        <img src="https://theme.zdassets.com/theme_assets/43400/ff07b62c6bf5fe5554e335ad40fe275008d9488a.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">HUYỀN THOẠI RUNETERRA </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 offset-sm-2" style="padding-top: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="https://theme.zdassets.com/theme_assets/43400/024046759204616468d151dc9e35c128e16ce5e4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">LMHT: TỐC CHIẾN </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 offset-sm"style="padding-top: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="https://theme.zdassets.com/theme_assets/43400/e81e86fce2e3e4505a7674d0822516113c72edfc.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">TỐC CHIẾN </p>
+        </div >
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <!-- Footer -->
+    <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #45526e"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Ctrl+C Hân Hạnh Tài Trợ Chương Trình Này
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">BÁO CHÍ</a>
+            </p>
+            <p>
+              <a class="text-white">BẢO MẬT</a>
+            </p>
+            <p>
+              <a class="text-white">PHÁP LÝ</a>
+            </p>
+            <p>
+              <a class="text-white">ĐIỀU KHOẢN SỬ DỤNG</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a class="text-white">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/"
+                 >Ps35039</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook"></i></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+    <!-- Footer -->
+  </div >
+  
+  <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
